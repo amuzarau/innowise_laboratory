@@ -2,18 +2,6 @@
 
 This Python program collects user information, generates a profile, saves it to JSON, and displays a summary.
 
-## Program Flow Diagram
-
-```mermaid
-flowchart TD
-    A[Start] --> B[Ask for name]
-    B --> C[Get age]
-    C --> D[Get hobbies]
-    D --> E[Generate life stage]
-    E --> F[Build user profile dictionary]
-    F --> G[Print summary]
-    G --> H[Save to JSON]
-    H --> I[End]
 
 ## 📊 Program Flow Diagrams
 
