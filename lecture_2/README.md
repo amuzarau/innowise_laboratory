@@ -5,16 +5,10 @@ This Python program collects user information, generates a profile, saves it to 
 
 ## 📊 Program Flow Diagrams
 
-This project includes two versions of the program flow diagram:
+This project includes program flow diagram:
 
 ---
 
-### 🖼️ PNG Diagram  
-Rendered flowchart (recommended for viewing on GitHub):
-
-![Program Flow Diagram](diagrams/program_flow.png)
-
----
 
 ### 📝 Mermaid Source Diagram  
 The original Mermaid diagram is available here:
