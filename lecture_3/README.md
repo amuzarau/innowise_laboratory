@@ -1,4 +1,4 @@
-# Student Grade Analyzer
+# 📘 Student Grade Analyzer
 
 A clean and fully type-annotated Python console application for managing student academic records.  
 The program allows users to:
@@ -19,17 +19,15 @@ This project demonstrates best practices in Python such as:
 
 ---
 
-##  Menu 
+## 🚀 Features
 
-### ✔ Option 1: Add a new student  
+### ✔ Add Students  
 Create a new student record while preventing duplicates.
 
-### ✔ Option 2: Add a grade for a student  
+### ✔ Add Grades  
 Enter multiple grades (0–100), with validation and safe handling of incorrect input.
 
-Includes a **required `try/except ValueError`** block for rejecting non-numeric input gracefully.
-
-### ✔ Option 3: Show report (all students)  
+### ✔ View Report  
 Displays each student’s average grade and overall class statistics:  
 - Highest average  
 - Lowest average  
@@ -37,11 +35,7 @@ Displays each student’s average grade and overall class statistics:
 
 Includes a **required `try/except ZeroDivisionError`** block for handling missing grades.
 
-### ✔ Option 4: Find top performerOption 5: Exit
+### ✔ Find Top Performer  
 Automatically determines which student has the highest average grade using:
 ```python
 max(..., key=lambda item: item[1])
-
-### ✔ Option 5: Exit
-Breaks the infinite loop to end the program.
-
