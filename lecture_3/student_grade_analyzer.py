@@ -15,7 +15,7 @@ def print_menu() -> None:
     print("2. Add grades for a student")
     print("3. Show report (all students)")
     print("4. Find top performer")
-    print("5. Exit program")
+    print("5. Exit")
 
 
 def get_menu_choice() -> int:
@@ -204,3 +204,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
