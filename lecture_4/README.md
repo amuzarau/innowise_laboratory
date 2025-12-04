@@ -58,6 +58,9 @@ grade	INTEGER	Grade (1–100)
 
 🗂️ 3. Mermaid ER Diagram
 
+🗂️ 3. Mermaid ER Diagram
+
+```mermaid
 erDiagram
     STUDENTS {
         INTEGER id PK "Primary key"
@@ -68,11 +71,13 @@ erDiagram
     GRADES {
         INTEGER id PK "Primary key"
         INTEGER student_id FK "References students.id"
-        TEXT subject "Subject name"
-        INTEGER grade "1–100"
+        TEXT subject "Subject"
+        INTEGER grade "Grade 1–100"
     }
 
     STUDENTS ||--o{ GRADES : "has many"
+```
+
 
 
 🧩 4. Sample Data
