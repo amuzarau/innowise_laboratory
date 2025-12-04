@@ -21,7 +21,6 @@ school.db — SQLite database file
 
 queries.sql — full SQL script (schema + inserts + queries)
 
-create_db.py — minimal Python file used only to initialize an empty SQLite database file
 
 🛠️ 1. Database Initialization
 
