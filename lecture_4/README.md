@@ -58,8 +58,6 @@ grade	INTEGER	Grade (1–100)
 
 🗂️ 3. Mermaid ER Diagram
 
-🗂️ 3. Mermaid ER Diagram
-
 ```mermaid
 erDiagram
     STUDENTS {
