@@ -1,0 +1,64 @@
+# ============================
+# Ruff Configuration
+# ============================
+
+# Target Python version
+target-version = "py312"
+
+# Maximum line length (Black-compatible)
+line-length = 88
+
+# Apply automatic fixes on save (VS Code will apply them if enabled)
+fix = true
+
+# Sort imports using Ruff's import sorter (replaces isort)
+[tool.ruff.lint]
+select = [
+    "E",   # Pycodestyle errors
+    "F",   # Pyflakes
+    "I",   # isort - import sorting
+    "N",   # Naming conventions
+    "B",   # Bugbear - better code safety
+    "UP",  # Pyupgrade - modern Python syntax
+]
+
+ignore = [
+    "E501",  # Ignore line length errors (handled by formatter)
+    "B008",  # FastAPI dependencies sometimes violate this (acceptable)
+]
+
+# Exclude common non-source directories
+exclude = [
+    ".git",
+    "__pycache__",
+    "venv",
+    "*.pyc"
+]
+
+# ============================
+# Import Sorting Rules
+# ============================
+[tool.ruff.lint.isort]
+combine-as-imports = true
+force-single-line = false
+lines-between-types = 1
+
+# ============================
+# FastAPI-Specific adjustments
+# ============================
+
+# Avoid false positives for FastAPI decorators & dependency injection
+[tool.ruff]
+extend-select = ["Q"]
+
+# ============================
+# Pydantic + SQLAlchemy tuning
+# ============================
+
+[tool.ruff.per-file-ignores]
+# Allow Pydantic model names and validators that may "look unused"
+"schemas.py" = ["F401", "F841"]  
+
+# Allow SQLAlchemy models to reference columns as attributes
+"models.py" = ["N815"]  # Allow Capitalized column names 
+
