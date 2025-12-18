@@ -67,5 +67,4 @@ This allows you to inspect the container filesystem using ls, cd, etc.
 docker stop <container-id>
 
 Verify stopped containers:
-
 docker ps -a
