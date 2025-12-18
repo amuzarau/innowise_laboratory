@@ -6,6 +6,7 @@ The application exposes a single endpoint that returns a JSON response and is us
 
 📁 Project Structure
 lecture_6/
+ 
  │
  ├── main.py          # FastAPI application
  ├── Dockerfile       # Docker configuration
