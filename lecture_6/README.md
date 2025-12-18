@@ -8,10 +8,15 @@ The application exposes a single endpoint that returns a JSON response and is us
 lecture_6/
  
  │
+ 
  ├── main.py          # FastAPI application
+ 
  ├── Dockerfile       # Docker configuration
+ 
  ├── .gitignore       # Git ignored files
+ 
  ├── .dockerignore    # Docker ignored files
+ 
  └── README.md        # Project documentation
 
 
