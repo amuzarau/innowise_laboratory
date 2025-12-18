@@ -33,6 +33,7 @@ The implementation can be found in main.py
 - No local Python installation required (runs fully inside Docker)
 
 🐳 Docker Instructions
+
 1️⃣ Build Docker Image
 From the project directory, run:
 docker build . -t app:latest
