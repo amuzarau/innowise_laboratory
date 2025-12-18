@@ -3,6 +3,8 @@ Dockerized FastAPI Application
 This project demonstrates how to dockerize a simple FastAPI application and verify that it runs correctly inside a Docker container using a healthcheck endpoint.
 The application exposes a single endpoint that returns a JSON response and is used to validate container startup and networking.
 
+
+📁 Project Structure
 lecture_6/
 │
 ├── main.py          # FastAPI application
@@ -10,6 +12,7 @@ lecture_6/
 ├── .gitignore       # Git ignored files
 ├── .dockerignore    # Docker ignored files
 └── README.md        # Project documentation
+
 
 
 🚀 Application Overview
